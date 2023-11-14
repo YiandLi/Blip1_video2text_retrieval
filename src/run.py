@@ -135,6 +135,7 @@ def evaluation(model, data_loader, tokenizer, device, config):
     with (Path(config.output_dir) / 'blip_result.json').open(mode='w', encoding='utf-8') as file:
         # Use json.dump to write the content to the file
         json.dump(ans, file, ensure_ascii=False)
+    print(f'Totally {len(video_feats)} instances saved in {config.output_dir + "blip_result.json"}.')
     
     return score_matrix_v2t.cpu().numpy()
 
