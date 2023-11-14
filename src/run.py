@@ -132,7 +132,7 @@ def evaluation(model, data_loader, tokenizer, device, config):
     print('Evaluation time {}'.format(total_time_str))
     
     # Open the file for writing using 'with' statement
-    with Path('blip_result.json').open(mode='w', encoding='utf-8') as file:
+    with (Path(config.output_dir) / 'blip_result.json').open(mode='w', encoding='utf-8') as file:
         # Use json.dump to write the content to the file
         json.dump(ans, file, ensure_ascii=False)
     
@@ -182,7 +182,7 @@ if __name__ == '__main__':
             self.num_frm_test = 32  # 抽帧数量
             self.k_test = 10
             self.image_size = 384
-            self.output_dir = 'output'
+            self.output_dir = '../output'
             self.distributed = False
             self.seed = 42
     
