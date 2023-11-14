@@ -173,7 +173,7 @@ def main(config):
 if __name__ == '__main__':
     class Config():
         def __init__(self):
-            self.video_root = '../data/refer_files'
+            self.video_root = '../data/total_files'
             self.ann_root = '../data/values.json'
             self.pretrained = '../checkpoint/model_base_retrieval_coco.pth'
             self.vit = 'base'
