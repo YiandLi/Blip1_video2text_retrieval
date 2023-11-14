@@ -173,14 +173,14 @@ def main(config):
 if __name__ == '__main__':
     class Config():
         def __init__(self):
-            self.video_root = '../data/total_files'
+            self.video_root = '../data/refer_files'
             self.ann_root = '../data/values.json'
             self.pretrained = '../checkpoint/model_base_retrieval_coco.pth'
             self.vit = 'base'
             self.device = 'cuda'  # 'cpu'
             self.batch_size = 2  # image batch size
-            self.num_frm_test = 8  # 抽帧数量
-            self.k_test = 4
+            self.num_frm_test = 32  # 抽帧数量
+            self.k_test = 10
             self.image_size = 384
             self.output_dir = 'output'
             self.distributed = False
