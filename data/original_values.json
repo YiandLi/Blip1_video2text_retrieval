@@ -1,0 +1,85 @@
+{
+  "scerario": [
+    "suburbs",
+    "city street",
+    "expressway",
+    "tunnel",
+    "parking-lot",
+    "gas or charging stations",
+    "unknown"
+  ],
+  "weather": [
+    "clear",
+    "cloudy",
+    "raining",
+    "foggy",
+    "snowy",
+    "unknown"
+  ],
+  "period": [
+    "daytime",
+    "dawn or dusk",
+    "night",
+    "unknown"
+  ],
+  "road_structure": [
+    "normal",
+    "crossroads",
+    "T-junction",
+    "ramp",
+    "lane merging",
+    "parking lot entrance",
+    "round about",
+    "unknown"
+  ],
+  "general_obstacle": [
+    "nothing",
+    "speed bumper",
+    "traffic cone",
+    "water horse",
+    "stone",
+    "manhole cover",
+    "nothing",
+    "unknown"
+  ],
+  "abnormal_condition": [
+    "uneven",
+    "oil or water stain",
+    "standing water",
+    "cracked",
+    "nothing",
+    "unknown"
+  ],
+  "ego_car_behavior": [
+    "slow down",
+    "go straight",
+    "turn right",
+    "turn left",
+    "stop",
+    "U-turn",
+    "speed up",
+    "lane change",
+    "others"
+  ],
+  "closest_participants_type": [
+    "passenger car",
+    "bus",
+    "truck",
+    "pedestrain",
+    "policeman",
+    "nothing",
+    "others",
+    "unknown"
+  ],
+  "closest_participants_behavior": [
+    "slow down",
+    "go straight",
+    "turn right",
+    "turn left",
+    "stop",
+    "U-turn",
+    "speed up",
+    "lane change",
+    "others"
+  ]
+}
