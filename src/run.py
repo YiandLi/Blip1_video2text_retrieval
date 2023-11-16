@@ -5,6 +5,8 @@
  * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  * By Junnan Li
 '''
+from dataclasses import dataclass
+
 import numpy as np
 import random
 import time
@@ -172,25 +174,25 @@ def main(config):
 
 
 if __name__ == '__main__':
+    @dataclass
     class Config():
-        def __init__(self):
-            self.video_root = '../data/total_files'
-            self.ann_root = '../data/values.json'
-            
-            # self.pretrained = '../checkpoint/model_base_retrieval_coco.pth'
-            # self.vit = 'base'
-            
-            self.pretrained = '../checkpoint/model_large_retrieval_coco.pth'
-            self.vit = 'large'
-            
-            self.device = 'cuda'  # 'cpu'
-            self.batch_size = 4  # image batch size
-            self.num_frm_test = 10  # 抽帧数量
-            self.k_test = 10
-            self.image_size = 384
-            self.output_dir = '../output'
-            self.distributed = False
-            self.seed = 42
+        video_root: str = '../data/total_files'
+        ann_root: str = '../data/values.json'
+        
+        # pretrained : str = '../checkpoint/model_base_retrieval_coco.pth'
+        # vit: str  = 'base'
+        
+        pretrained: str = '../checkpoint/model_large_retrieval_coco.pth'
+        vit: str = 'large'
+        
+        device: int = 'cuda'  # 'cpu'
+        batch_size: int = 4  # image batch size
+        num_frm_test: int = 10  # 抽帧数量
+        k_test: int = 10
+        image_size: int = 384
+        output_dir: str = '../output'
+        distributed: bool = False
+        seed: int = 42
     
     
     config = Config()
