@@ -180,7 +180,7 @@ if __name__ == '__main__':
         ann_root: str = '../data/values.json'
         
         # pretrained : str = '../checkpoint/model_base_retrieval_coco.pth'
-        # vit: str  = 'base'
+        # vit: str = 'base'
         
         pretrained: str = '../checkpoint/model_large_retrieval_coco.pth'
         vit: str = 'large'
