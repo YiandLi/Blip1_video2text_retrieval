@@ -5,8 +5,7 @@
     "expressway",
     "tunnel",
     "parking-lot",
-    "gas or charging stations",
-    "unknown"
+    "gas or charging stations"
   ],
   "weather": [
     "clear",
@@ -19,8 +18,7 @@
   "period": [
     "daytime",
     "dawn or dusk",
-    "night",
-    "unknown"
+    "night"
   ],
   "road_structure": [
     "normal",
@@ -29,8 +27,7 @@
     "ramp",
     "lane merging",
     "parking lot entrance",
-    "round about",
-    "unknown"
+    "round about"
   ],
   "general_obstacle": [
     "nothing",
@@ -39,16 +36,14 @@
     "water horse",
     "stone",
     "manhole cover",
-    "nothing",
-    "unknown"
+    "nothing"
   ],
   "abnormal_condition": [
     "uneven",
     "oil or water stain",
     "standing water",
     "cracked",
-    "nothing",
-    "unknown"
+    "nothing"
   ],
   "ego_car_behavior": [
     "slow down",
@@ -68,8 +63,7 @@
     "pedestrain",
     "policeman",
     "nothing",
-    "others",
-    "unknown"
+    "others"
   ],
   "closest_participants_behavior": [
     "slow down",
