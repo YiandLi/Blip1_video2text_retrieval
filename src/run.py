@@ -176,8 +176,13 @@ if __name__ == '__main__':
         def __init__(self):
             self.video_root = '../data/total_files'
             self.ann_root = '../data/values.json'
-            self.pretrained = '../checkpoint/model_base_retrieval_coco.pth'
-            self.vit = 'base'
+            
+            # self.pretrained = '../checkpoint/model_base_retrieval_coco.pth'
+            # self.vit = 'base'
+            
+            self.pretrained = '../checkpoint/model_large_retrieval_coco.pth'
+            self.vit = 'large'
+            
             self.device = 'cuda'  # 'cpu'
             self.batch_size = 4  # image batch size
             self.num_frm_test = 8  # 抽帧数量
