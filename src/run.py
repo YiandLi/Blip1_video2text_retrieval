@@ -187,7 +187,7 @@ if __name__ == '__main__':
         
         device: int = 'cuda'  # 'cpu'
         batch_size: int = 4  # image batch size
-        num_frm_test: int = 8  # 抽帧数量
+        num_frm_test: int = 16  # 抽帧数量
         k_test: int = 10
         image_size: int = 384
         output_dir: str = '../output'
